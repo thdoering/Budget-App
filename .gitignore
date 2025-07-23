@@ -1,1 +1,46 @@
+# Node modules and build artifacts
+node_modules/
+dist/
+build/
+out/
+.nyc_output/
+coverage/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment and credentials
 .env
+.env.local
+.env.*.local
+
+# SQLite and local data
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Electron specific
+*.asar
+electron-packager-temp/
+electron-builder-cache/
+*.unpacked/
+
+# OS junk
+*.swp
+*.swo
+*.bak
+
+# VSC and IDE junk
+.vscode/
+.idea/
+*.code-workspace
