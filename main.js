@@ -13,10 +13,11 @@ function createWindow () {
     }
   });
 
-  win.loadFile('src/renderer/index.html');
+  // Load the BUILT React app (not the source HTML)
+  win.loadFile('dist/index.html');
 
   // Uncomment for devtools
-  // win.webContents.openDevTools();
+  win.webContents.openDevTools();
 }
 
 app.whenReady().then(createWindow);
